@@ -22,7 +22,7 @@ function BirthdayWise(){
       var imageId = Sheet.getRange(i, 6).getValue();
       var to = Sheet.getRange(i, 2).getValue();
       var Image = DriveApp.getFileById(imageId).getBlob();
-      var cc = "Director@bajatoparts.com, npd@bajatoparts.com, dme@bajatoparts.com"
+      var cc = ""
       
       // Logger.log(name);
       
@@ -40,7 +40,7 @@ function BirthdayWise(){
                               "<img src=\"cid:sampleImage\">",
                         
                           inlineImages: {sampleImage: Image},
-                        name: "Rajat Bajaj",
+                        name: "Pooja",
                         cc: cc,
                         replyTo: cc
                         })
